@@ -17,3 +17,5 @@ fun drop(list: List<Int>) = list.drop(3)
 fun single(list: List<Int>) = list.single { num: Int -> num == 5 }
 
 fun singleOrNull(list: List<Int>) = list.singleOrNull { num: Int -> num == 11 }
+
+fun max(list: List<Int>) = list.max()

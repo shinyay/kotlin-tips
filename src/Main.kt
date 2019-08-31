@@ -51,6 +51,9 @@ fun main() {
     println("[single]: list.singleOrNull { num: Int -> num == 11 }")
     callActionPrimitive { singleOrNull(listInt) }
 
+    println("[max]: list.max()}")
+    callActionPrimitive { max(listInt) }
+
     println("")
 }
 
