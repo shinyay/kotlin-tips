@@ -45,6 +45,12 @@ fun main() {
     println("[drop]: list.drop(3)")
     callActionInt { drop(listInt) }
 
+    println("[single]: list.single { num: Int -> num == 5 }")
+    callActionPrimitive { single(listInt) }
+
+    println("[single]: list.singleOrNull { num: Int -> num == 11 }")
+    callActionPrimitive { singleOrNull(listInt) }
+
     println("")
 }
 
@@ -79,6 +85,11 @@ fun callActionDimensionalList(function: () -> List<List<Int>>) {
 }
 
 fun callActionPair(function: () -> Pair<List<Int>, List<Int>>) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionPrimitive(function: () -> Int?) {
     println(function())
     println("--------------------------------------------")
 }
