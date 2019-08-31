@@ -1,6 +1,7 @@
 fun main() {
     val listInt = (1..10).toList()
 
+    println("[Conversion]==================================")
     println("[map]: list.map { num -> \"Num: \$num\"}")
     callAction{ map(listInt) }
 
@@ -19,11 +20,14 @@ fun main() {
     println("[associateWith]: list.associateWith { num -> num * num }")
     callActionMapInt { associateWith(listInt) }
 
+    println("[Extraction]=================================")
+    println("[filter]: list.filter { num -> num %2 == 0 }")
+    callActionInt { filter(listInt) }
 }
 
 fun callAction(function: () -> List<String?>) {
     println(function())
-    println("--------------------------------------------")
+    println("----------------------------------------------")
 }
 
 fun callActionInt(function: () -> List<Int>) {

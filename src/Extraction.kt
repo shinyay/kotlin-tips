@@ -1,0 +1,1 @@
+fun filter(list: List<Int>) = list.filter { num -> num %2 == 0 }
