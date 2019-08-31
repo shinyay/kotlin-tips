@@ -7,3 +7,6 @@ fun mapNotNull(list: List<Int?>) = list.mapNotNull { num -> if (num == null) nul
 fun flatMap(list: List<List<Int>>): List<Int> = list.flatMap { num -> num }
 
 fun associate(list: List<Int>) = list.associate { num -> "Num * Num" to num * num }
+
+fun associateWith(list: List<Int>) = list.associateWith { num -> num * num }
+

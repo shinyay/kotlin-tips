@@ -16,6 +16,9 @@ fun main() {
     println("[associate]: list.associate { num -> \"Num * Num\" to num * num }")
     callActionMap { associate(listInt) }
 
+    println("[associateWith]: list.associateWith { num -> num * num }")
+    callActionMapInt { associateWith(listInt) }
+
 }
 
 fun callAction(function: () -> List<String?>) {
@@ -29,6 +32,11 @@ fun callActionInt(function: () -> List<Int>) {
 }
 
 fun callActionMap(function: () -> Map<String, Int>) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionMapInt(function: () -> Map<Int, Int>) {
     println(function())
     println("--------------------------------------------")
 }
