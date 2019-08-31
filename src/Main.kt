@@ -58,7 +58,7 @@ fun main() {
     callActionPrimitive { min(listInt) }
 
     println("[maxBy]: list.maxBy { s: String -> s.length }")
-    callActionPrimitiveString { maxBy(listOf<String>("a", "ab", "abc", "abcd", "abcde")) }
+    callAction { distinctBy(listOf<String>("a", "ab", "abc", "aa", "bbb")) }
 
     println("")
 }
