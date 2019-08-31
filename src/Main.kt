@@ -39,8 +39,11 @@ fun main() {
     println("[take]: list.take(5)")
     callActionInt { take(listInt) }
 
-    println("[take]: list.takeLast(5)")
+    println("[takeLast]: list.takeLast(5)")
     callActionInt { takeLast(listInt) }
+
+    println("[drop]: list.drop(3)")
+    callActionInt { drop(listInt) }
 
     println("")
 }
