@@ -32,6 +32,9 @@ fun main() {
 
     println("[chunked]: list.chunked(3)")
     callActionDimensionalList { chunked(listInt) }
+
+    println("[partition]: list.partition { num -> num % 2 == 0}")
+    callActionPair { partition(listInt) }
 }
 
 fun callAction(function: () -> List<String?>) {
@@ -60,6 +63,11 @@ fun callActionMapIntList(function: () -> Map<String, List<Int>>) {
 }
 
 fun callActionDimensionalList(function: () -> List<List<Int>>) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionPair(function: () -> Pair<List<Int>, List<Int>>) {
     println(function())
     println("--------------------------------------------")
 }
