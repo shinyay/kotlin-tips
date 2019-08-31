@@ -54,6 +54,9 @@ fun main() {
     println("[max]: list.max()}")
     callActionPrimitive { max(listInt) }
 
+    println("[min]: list.min()}")
+    callActionPrimitive { min(listInt) }
+
     println("")
 }
 
