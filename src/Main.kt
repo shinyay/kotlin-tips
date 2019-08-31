@@ -29,6 +29,9 @@ fun main() {
 
     println("[groupBy]: list.groupBy { num -> if (num % 2 == 0) \"EVEN\" else \"ODD\" }")
     callActionMapIntList { groupBy(listInt) }
+
+    println("[chunked]: list.chunked(3)")
+    callActionDimensionalList { chunked(listInt) }
 }
 
 fun callAction(function: () -> List<String?>) {
@@ -52,6 +55,11 @@ fun callActionMapInt(function: () -> Map<Int, Int>) {
 }
 
 fun callActionMapIntList(function: () -> Map<String, List<Int>>) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionDimensionalList(function: () -> List<List<Int>>) {
     println(function())
     println("--------------------------------------------")
 }
