@@ -7,3 +7,5 @@ fun groupBy(list: List<Int>) = list.groupBy { num -> if (num % 2 == 0) "EVEN" el
 fun chunked(list: List<Int>) = list.chunked(3)
 
 fun partition(list: List<Int>) = list.partition { num -> num % 2 == 0}
+
+fun take(list: List<Int>) = list.take(5)

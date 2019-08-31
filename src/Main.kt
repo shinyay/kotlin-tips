@@ -35,6 +35,9 @@ fun main() {
 
     println("[partition]: list.partition { num -> num % 2 == 0}")
     callActionPair { partition(listInt) }
+
+    println("[take]: list.take(5)")
+    callActionInt { take(listInt) }
 }
 
 fun callAction(function: () -> List<String?>) {
