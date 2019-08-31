@@ -23,6 +23,9 @@ fun main() {
     println("[Extraction]=================================")
     println("[filter]: list.filter { num -> num %2 == 0 }")
     callActionInt { filter(listInt) }
+
+    println("[filterNot]: list.filter { num -> num %2 == 0 }")
+    callActionInt { filterNot(listInt) }
 }
 
 fun callAction(function: () -> List<String?>) {
