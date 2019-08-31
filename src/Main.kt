@@ -13,6 +13,9 @@ fun main() {
     println("[flatMap]: list.flatMap { num -> num }")
     callActionInt { flatMap(listOf((0..4).toList(), (5..9).toList())) }
 
+    println("[associate]: list.associate { num -> \"Num * Num\" to num * num }")
+    callActionMap { associate(listInt) }
+
 }
 
 fun callAction(function: () -> List<String?>) {
@@ -21,6 +24,11 @@ fun callAction(function: () -> List<String?>) {
 }
 
 fun callActionInt(function: () -> List<Int>) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionMap(function: () -> Map<String, Int>) {
     println(function())
     println("--------------------------------------------")
 }
