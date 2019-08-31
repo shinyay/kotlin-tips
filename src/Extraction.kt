@@ -25,3 +25,5 @@ fun min(list: List<Int>) = list.min()
 fun maxBy(list: List<String>) = list.maxBy { s: String -> s.length }
 
 fun distinctBy(list: List<String>) = list.distinctBy { s: String -> s.length }
+
+fun slice(list: List<String>) = list.slice(1..3)
