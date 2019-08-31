@@ -26,6 +26,9 @@ fun main() {
 
     println("[filterNot]: list.filter { num -> num %2 == 0 }")
     callActionInt { filterNot(listInt) }
+
+    println("[groupBy]: list.groupBy { num -> if (num % 2 == 0) \"EVEN\" else \"ODD\" }")
+    callActionMapIntList { groupBy(listInt) }
 }
 
 fun callAction(function: () -> List<String?>) {
@@ -44,6 +47,11 @@ fun callActionMap(function: () -> Map<String, Int>) {
 }
 
 fun callActionMapInt(function: () -> Map<Int, Int>) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionMapIntList(function: () -> Map<String, List<Int>>) {
     println(function())
     println("--------------------------------------------")
 }
