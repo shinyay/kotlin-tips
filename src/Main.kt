@@ -38,6 +38,11 @@ fun main() {
 
     println("[take]: list.take(5)")
     callActionInt { take(listInt) }
+
+    println("[take]: list.takeLast(5)")
+    callActionInt { takeLast(listInt) }
+
+    println("")
 }
 
 fun callAction(function: () -> List<String?>) {
