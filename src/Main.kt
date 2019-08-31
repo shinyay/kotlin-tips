@@ -57,6 +57,9 @@ fun main() {
     println("[min]: list.min()}")
     callActionPrimitive { min(listInt) }
 
+    println("[maxBy]: list.maxBy { s: String -> s.length }")
+    callActionPrimitiveString { maxBy(listOf<String>("a", "ab", "abc", "abcd", "abcde")) }
+
     println("")
 }
 
@@ -96,6 +99,11 @@ fun callActionPair(function: () -> Pair<List<Int>, List<Int>>) {
 }
 
 fun callActionPrimitive(function: () -> Int?) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionPrimitiveString(function: () -> String?) {
     println(function())
     println("--------------------------------------------")
 }

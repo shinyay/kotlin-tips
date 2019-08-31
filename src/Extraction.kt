@@ -21,3 +21,5 @@ fun singleOrNull(list: List<Int>) = list.singleOrNull { num: Int -> num == 11 }
 fun max(list: List<Int>) = list.max()
 
 fun min(list: List<Int>) = list.min()
+
+fun maxBy(list: List<String>) = list.maxBy { s: String -> s.length }
