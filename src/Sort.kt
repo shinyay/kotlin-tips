@@ -1,0 +1,1 @@
+fun sorted(list: List<Int>) = list.sorted()
