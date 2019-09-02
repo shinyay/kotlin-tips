@@ -69,6 +69,10 @@ fun main() {
     println("[Sort]=================================")
     println("[sorted]: list.sorted()")
     callActionInt { sorted(arrayListOf(1,9,2,8,3,7,4,6,5)) }
+
+    println("[sortedBy]: list.sortedBy { s -> s.length }")
+    callAction { sortedBy(arrayListOf("aaa","aa","aaaa","a")) }
+
     println("")
 }
 
