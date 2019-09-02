@@ -66,6 +66,9 @@ fun main() {
     println("[slice]: list.slice(1..3)")
     callAction { slice(listOf<String>("a", "ab", "abc", "aa", "bbb")) }
 
+    println("[Sort]=================================")
+    println("[sorted]: list.sorted()")
+    callActionInt { sorted(arrayListOf(1,9,2,8,3,7,4,6,5)) }
     println("")
 }
 
@@ -113,3 +116,4 @@ fun callActionPrimitiveString(function: () -> String?) {
     println(function())
     println("--------------------------------------------")
 }
+
