@@ -73,6 +73,9 @@ fun main() {
     println("[sortedBy]: list.sortedBy { s -> s.length }")
     callAction { sortedBy(arrayListOf("aaa","aa","aaaa","a")) }
 
+    println("[reversed]: list.reversed()")
+    callAction { reversed(arrayListOf("c", "b", "a", "C", "B", "A")) }
+
     println("")
 }
 
