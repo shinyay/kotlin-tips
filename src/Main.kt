@@ -86,6 +86,10 @@ fun main() {
     println("[none]: list.none()")
     callActionJudge { none(arrayListOf(5,7,9,10)) }
 
+    println("[Caliculation]=================================")
+    println("[sum]: list.sum()")
+    callActionPrimitive{ sum(arrayListOf(1,2,3,4)) }
+
     println("")
 }
 
