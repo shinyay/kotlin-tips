@@ -103,6 +103,9 @@ fun main() {
     println("[plus]: list.plus()")
     callAction{ plus(arrayListOf("a","b","c"), arrayListOf("x","y","z")) }
 
+    println("[zip]: list.zip()")
+    callActionPrimitiveString{ zip(arrayListOf("1","2","3"), arrayListOf("x","y","z")).toString() }
+
     println("")
 }
 
