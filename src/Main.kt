@@ -99,6 +99,10 @@ fun main() {
     println("[fold]: list.fold()")
     callActionPrimitive{ fold(arrayListOf(1,2,3,4)) }
 
+    println("[Composition]=================================")
+    println("[plus]: list.plus()")
+    callAction{ plus(arrayListOf("a","b","c"), arrayListOf("x","y","z")) }
+
     println("")
 }
 
