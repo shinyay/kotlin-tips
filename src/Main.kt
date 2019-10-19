@@ -90,6 +90,9 @@ fun main() {
     println("[sum]: list.sum()")
     callActionPrimitive{ sum(arrayListOf(1,2,3,4)) }
 
+    println("[average]: list.average()")
+    callActionDouble{ average(arrayListOf(1,2,3,4)) }
+
     println("")
 }
 
@@ -129,6 +132,11 @@ fun callActionPair(function: () -> Pair<List<Int>, List<Int>>) {
 }
 
 fun callActionPrimitive(function: () -> Int?) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionDouble(function: () -> Double) {
     println(function())
     println("--------------------------------------------")
 }
