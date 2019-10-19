@@ -93,6 +93,9 @@ fun main() {
     println("[average]: list.average()")
     callActionDouble{ average(arrayListOf(1,2,3,4)) }
 
+    println("[reduce]: list.reduce()")
+    callActionPrimitive{ reduce(arrayListOf(1,2,3,4)) }
+
     println("")
 }
 
