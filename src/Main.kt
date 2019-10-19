@@ -80,6 +80,10 @@ fun main() {
     println("[all]: list.all()")
     callActionJudge { all(arrayListOf(1,2,3,4)) }
 
+    println("[Judge]=================================")
+    println("[any]: list.any()")
+    callActionJudge { any(arrayListOf(1,5,7,9)) }
+
     println("")
 }
 
