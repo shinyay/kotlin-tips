@@ -96,6 +96,9 @@ fun main() {
     println("[reduce]: list.reduce()")
     callActionPrimitive{ reduce(arrayListOf(1,2,3,4)) }
 
+    println("[fold]: list.fold()")
+    callActionPrimitive{ fold(arrayListOf(1,2,3,4)) }
+
     println("")
 }
 
