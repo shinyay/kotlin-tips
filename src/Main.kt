@@ -76,6 +76,10 @@ fun main() {
     println("[reversed]: list.reversed()")
     callAction { reversed(arrayListOf("c", "b", "a", "C", "B", "A")) }
 
+    println("[Judge]=================================")
+    println("[all]: list.all()")
+    callActionJudge { all(arrayListOf(1,2,3,4)) }
+
     println("")
 }
 
@@ -120,6 +124,11 @@ fun callActionPrimitive(function: () -> Int?) {
 }
 
 fun callActionPrimitiveString(function: () -> String?) {
+    println(function())
+    println("--------------------------------------------")
+}
+
+fun callActionJudge(function: () -> Boolean) {
     println(function())
     println("--------------------------------------------")
 }
